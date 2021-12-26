@@ -43,6 +43,7 @@
             this.textBoxJumlah = new System.Windows.Forms.TextBox();
             this.textBoxNama = new System.Windows.Forms.TextBox();
             this.textBoxNoTlf = new System.Windows.Forms.TextBox();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtPemesanan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -176,11 +177,22 @@
             this.textBoxNoTlf.Size = new System.Drawing.Size(253, 22);
             this.textBoxNoTlf.TabIndex = 14;
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(603, 176);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 15;
+            this.buttonBack.Text = "Back";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.textBoxNoTlf);
             this.Controls.Add(this.textBoxNama);
             this.Controls.Add(this.textBoxJumlah);
@@ -222,6 +234,7 @@
         private System.Windows.Forms.TextBox textBoxJumlah;
         private System.Windows.Forms.TextBox textBoxNama;
         private System.Windows.Forms.TextBox textBoxNoTlf;
+        private System.Windows.Forms.Button buttonBack;
     }
 }
 
